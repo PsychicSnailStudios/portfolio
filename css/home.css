@@ -61,14 +61,33 @@
     grid-row-start: 1;
     grid-row-end: 6;
 
-    /* height: 350px; */
     width: 100%;
 }
-.game-info img:hover {
-    position: relative;
-    bottom: -10px;
-}
+/* .game-info img:hover { */
+    /* position: relative; */
+    /* bottom: -10px; */
+/* } */
 
-.with-background {
-    background-image: url("src/images/diamond_background.png");
+/* responsive styling */
+
+@media screen and (max-width: 915px){
+    .game-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr;
+
+        column-gap: 20px;
+        row-gap: 20px;
+        padding-bottom: 8%;
+
+        max-width: 100%;
+    }
+
+    .game-info img {
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        width: 100%;
+        align-self: flex-end;
+    }
 }

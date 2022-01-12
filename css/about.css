@@ -54,3 +54,28 @@ ul.social-links li img:hover {
     transform: scale(1.1);
     transition: all .05s;
 }
+
+/* responsive styling */
+
+@media screen and (max-width: 890px){
+    .bio {
+        grid-template-columns: 1fr;
+        
+        column-gap: 4%;
+        row-gap: 3%;
+        padding-bottom: 6%;
+    }
+    .bio h2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .bio .bio-cirt img {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .bio {
+        padding-bottom: 20%;
+    }
+}
