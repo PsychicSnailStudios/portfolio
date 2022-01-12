@@ -1,0 +1,46 @@
+.button {
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.521);
+    border-radius: 20px;
+
+    text-align: center;
+    text-decoration: none;
+    
+    display: inline-block;
+    padding: 2 2rem;
+}
+.button:hover {
+    /* background-color: rgba(255, 255, 255, 0.521); */
+    border-color: white;
+    transform: scale(1.1);
+    transition: all .05s;
+}
+
+ul.button-list {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.main-nav {
+    padding: 20 10px;
+}
+.main-nav ul li {
+    display: inline;
+    text-align: center;
+
+    padding: 0 5px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}

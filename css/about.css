@@ -1,0 +1,81 @@
+ul.social-links {
+    list-style-type: none;
+    max-height: 10%;
+}
+ul.social-links li {
+    display: inline;
+    height: 100%;
+}
+ul.social-links li img {
+    display: inline;
+    height: 8%;
+}
+ul.social-links li img:hover {
+    transform: scale(1.1);
+    transition: all .05s;
+}
+
+.file-download {
+    background-color: rgb(22, 22, 22);
+    padding: 30px;
+}
+
+.contact {
+    padding-top: 5%;
+}
+.contact p a {
+    color: darkcyan;
+}
+
+.bio {
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr;
+    grid-template-rows: 1fr 8fr;
+
+    column-gap: 4%;
+    row-gap: 20px;
+
+    padding-bottom: 5%;
+}
+.bio h2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.bio .bio-about {
+    text-align: justify;
+}
+.bio .bio-qual {
+    line-height: 1.5em;
+}
+.bio .bio-cirt img {
+    max-width: 100%;
+}
+.bio .bio-cirt img:hover {
+    transform: scale(1.1);
+    transition: all .05s;
+}
+
+/* responsive styling */
+
+@media screen and (max-width: 890px){
+    .bio {
+        grid-template-columns: 1fr;
+        
+        column-gap: 4%;
+        row-gap: 3%;
+        padding-bottom: 6%;
+    }
+    .bio h2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .bio .bio-cirt img {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .bio {
+        padding-bottom: 20%;
+    }
+}
