@@ -14,7 +14,7 @@
 
 </head>
 
-<body>
+<body class="fade">
   
   <!-- main navigation -->
   <nav class="main-nav">
@@ -44,7 +44,35 @@
       </ul>
       <p class="credit">All code and assets made by me in 5 days for Brackeys Game Jam 2020.2</p>
       <a href="https://psychic-snail-studios.itch.io/reslimed-brackeys-game-jam2020" class="button play">PLAY</a>
-      <img src="src/images/games/slimed_1.gif" alt="">
+      <!-- slideshow container -->
+      <div class="slideshow-container">
+        <div class="container1-slide fade">
+          <img src="src/images/games/slimed_1.gif">
+        </div>
+        <div class="container1-slide fade">
+          <img src="src/images/games/slimed_2.gif">
+        </div>
+        <div class="container1-slide fade">
+          <img src="src/images/games/slimed_3.gif">
+        </div>
+        <div class="container1-slide fade">
+          <img src="src/images/games/slimed_4.gif">
+        </div>
+        <div class="container1-slide fade">
+          <img src="src/images/games/slimed_5.gif">
+        </div>
+        <div class="container1-slide fade">
+          <img src="src/images/games/slimed_6.gif">
+        </div>
+        <div class="container1-slide fade">
+          <img src="src/images/games/slimed_7.gif">
+        </div>
+      
+        <!-- next and previous buttons -->
+        <br>
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
     </section>
 
     <section class="game-info with-background">
@@ -59,7 +87,25 @@
       <p class="credit">All code and assets made by me in 4 days for the Brackeys Game Jam 2021.1</p>
       <a href="https://psychic-snail-studios.itch.io/cubes" class="button play">PLAY</a>
       <a href="https://github.com/PsychicSnailStudios/cubes-source" class="button source">SOURCE CODE</a>
-      <img src="src/images/games/cubes_1.gif" alt="">
+      <!-- slideshow container -->
+      <div class="slideshow-container">
+        <div class="container2-slide fade">
+          <img src="src/images/games/cubes_1.gif">
+        </div>
+      
+        <div class="container2-slide fade">
+          <img src="src/images/games/cubes_2.gif">
+        </div>
+      
+        <div class="container2-slide fade">
+          <img src="src/images/games/cubes_3.jpg">
+        </div>
+      
+        <!-- next and previous buttons -->
+        <br>
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+      </div>
     </section>
 
     <section class="game-info">
@@ -74,7 +120,21 @@
       <p class="credit">All code and art made by me in 24 hours for the Extra Credits Jam #6. Music by Eric Matyas, SFX by 99Sounds</p>
       <a href="https://psychic-snail-studios.itch.io/time-doesnt-care-extracreditsjam6" class="button play">PLAY</a>
       <a href="https://github.com/PsychicSnailStudios/tdc-source" class="button source">SOURCE CODE</a>
-      <img src="src/images/games/tdc_1.gif" alt="">
+      <!-- slideshow container -->
+      <div class="slideshow-container">
+        <div class="container3-slide fade">
+          <img src="src/images/games/tdc_1.gif">
+        </div>
+      
+        <div class="container3-slide fade">
+          <img src="src/images/games/tdc_2.gif">
+        </div>
+      
+        <!-- next and previous buttons -->
+        <br>
+        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+      </div>
     </section>
 
     <!-- <section class="game-info"> -->
@@ -100,5 +160,8 @@
   </footer>
 
 </body>
+
+<!-- add scripts -->
+<script src="js/home.js"></script>
 
 </html>
