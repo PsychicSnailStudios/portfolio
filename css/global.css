@@ -12,6 +12,8 @@
 .button:hover {
     /* background-color: rgba(255, 255, 255, 0.521); */
     border-color: white;
+    transform: scale(1.1);
+    transition: all .05s;
 }
 
 ul.button-list {

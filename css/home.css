@@ -1,0 +1,74 @@
+.game-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+
+    column-gap: 20px;
+    row-gap: 20px;
+
+    padding-bottom: 8%;
+
+    max-width: 100%;
+}
+
+.game-info h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    text-align: left;
+}
+
+.game-info .description {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    text-align: justify;
+}
+
+.game-info label {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    text-align: left;
+}
+
+.game-info ul {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.game-info .credit {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    text-align: justify;
+}
+
+.game-info a .play {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.game-info a .source {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.game-info img {
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    grid-row-start: 1;
+    grid-row-end: 6;
+
+    /* height: 350px; */
+    width: 100%;
+}
+.game-info img:hover {
+    position: relative;
+    bottom: -10px;
+}
+
+.with-background {
+    background-image: url("src/images/diamond_background.png");
+}
