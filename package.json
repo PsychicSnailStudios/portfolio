@@ -1,0 +1,22 @@
+{
+  "name": "@example/minimal",
+  "version": "0.0.1",
+  "private": true,
+    "browserslist": [
+      "defaults"
+    ],
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "astro": "^0.25.4",
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12"
+  },
+  "dependencies": {
+    "astro-icon": "^0.6.1"
+  }
+}
