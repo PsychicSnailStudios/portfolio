@@ -63,6 +63,7 @@ small {
 
 .text-gradient {
   background: var(--gradient);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -71,6 +72,7 @@ small {
   
   .button:hover {
     background: var(--gradient);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
