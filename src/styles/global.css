@@ -1,0 +1,77 @@
+/* Body */
+
+body {
+  font-family: 'Geomatrix', 'sans-serif';
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  
+  background-color: hsl(var(--white));
+  color: hsl(var(--text));
+}
+
+main {
+  display: grid;
+  margin: 0% 18% 0% 18%;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+small {
+  color: hsl(var(--muted-text));
+}
+
+/* Components */
+
+.button {
+  color: hsl(var(--white));
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+}
+.button:hover {
+  background: hsl(var(--gray) / 0.5);
+}
+
+/* Utilities */
+
+.h1 {
+  font-size: 3.157rem;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.h2 {
+  font-size: 2.369rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.h3 {
+  font-size: 1.777rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.h4 {
+  font-size: 1.333rem;
+}
+
+.text-gradient {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 750px) {
+  
+  .button:hover {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

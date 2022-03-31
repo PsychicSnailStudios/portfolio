@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Geomatrix";
+  src: url("../fonts/geomatrix/Geomatrix.otf") format("opentype");
+}
+
+:root {
+    /* Colors */
+    --bkg: 259 8% 9%;
+    --gray: 241 3% 37%;
+    --white: 0 0% 100%;
+
+    --text: 0 0% 100%;
+    --muted-text: 241 3% 37%;
+
+    --accent1: 346 56% 52%;
+    --accent2: 22 100% 61%;
+
+    --gradient: linear-gradient(
+        -30deg,
+        hsl(var(--accent1)),
+        hsl(var(--accent2))
+    );
+
+    /* Spacing */
+    --padding-large: 3rem;
+    --padding-normal: 2rem;
+    --padding-small: 1rem;
+
+    --space-large: 3rem;
+    --space-normal: 1rem;
+    --space-small: 0.5rem;
+
+}
