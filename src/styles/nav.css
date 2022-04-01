@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: var(--padding-tall);
   border-bottom: 2px solid hsl(var(--white));
 }
 
@@ -13,7 +13,7 @@
 .nav-wrapper {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--space-s);
 }
 
 .nav-links {
@@ -21,17 +21,19 @@
   flex-direction: column;
   transform: translateY(-200%);
   position: absolute;
-  top: 3rem;
+  top: var(--space-l);
   left: 0;
   right: 0;
   text-align: center;
-  padding: 1rem;
+  padding: var(--space);
   background-color: hsl(var(--bkg) / .98);
   border-bottom: 3px solid hsl(var(--accent1));
+  z-index: -1;
+  transition: transform var(--transition-time);;
 }
 
 .menu-button[aria-expanded="true"] + .nav-links {
-  transform: translateY(0);
+  transform: translateY(1.4em);
 }
 
 .nav-links li,
@@ -42,21 +44,21 @@
 }
 
 .logo {
-  transition: all 0.15s;
+  transition: all var(--transition-time-short);;
 }
 .logo:hover {
   transform: scale(1.05);
   transform: rotate(-180deg);
-  transition: all 0.15s;
+  transition: all var(--transition-time-short);;
 }
 
 .menu-button {
   background-color: transparent;
   border: 0;
-  color: white;
+  color: hsl(var(--white));
   display: grid;
   place-items: center;
-  padding-inline: 1rem;
+  padding-inline: 1em;
   cursor: pointer;
 }
 
@@ -64,7 +66,7 @@
 @media screen and (min-width: 1000px) {
   
   .nav-container {
-    padding: 0.3rem 1.5rem;
+    padding: var(--padding-short);
   }
   .menu-button {
     display: none;
@@ -75,8 +77,10 @@
     border: none;
     background-color: transparent;
     transform: translateY(0);
+    transition: all 0s;
     padding: 0;
     inset: initial;
+    z-index: 0;
   }
   .nav-links li,
   .nav-links li a {

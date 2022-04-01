@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 import IconBox from '../components/IconBox.astro'
+import ImageBox from '../components/ImageBox.astro'
 
 import '../styles/home.css';
 
@@ -64,39 +65,27 @@ const skills = [
 ---
 
 <BaseLayout title="Portfolio - Home">
-	<section class="hero">
+
+	<!-- HERO -->
+	<section class="hero" id="hero">
 		<div class="inner-section">
 			<h1 class="h1 text-dark">Hi There,<br>I'm <span class="text-gradient">Dawson</span></h1>
-			<h3 class="h3 text-muted">a passionte game dev</h3>
-			<p class="p text-muted">	Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-									Tempora impedit reiciendis alias maxime accusantium dicta suscipit veniam,
-									adipisci magni, aut voluptas nobis minus voluptatem natus.</p>
+			<h3 class="h3 text-muted">game artist / developer</h3>
+			<p class="p p-short text-muted">Just a passionate and self-taught indi dev looking
+									to help tell stories through games. Lover of books, music, and coffee.</p>
 		</div>
 
 		<div class="inner-section">
-			<div class="allign-right">
-			<div class="bordered-img lg-img">
-				<img src="../src/images/me.jpg" alt="">
-			</div>
-			</div>
-
-			<div class="allign-left push-up">
-			<div class="bordered-img md-img">
-				<img src="../src/images/psychicsnail.jpg" alt="">
-			</div>
-			</div>
-
-			<div class="allign-center push-up-large">
-			<div class="space"></div>
-			<div class="bordered-img sm-img">
-				<img src="../src/images/pixeljunky.jpg" alt="">
-			</div>
-			</div>
+			<ImageBox allign="allign-right" img="../src/images/me.jpg" size="lg" />
+			<ImageBox allign="allign-left" pos="push-up" img="../src/images/psychicsnail.jpg" size="md" />
+			<ImageBox allign="allign-center" space="space" pos="push-up-large" img="../src/images/pixeljunky.jpg" size="sm" />
 		</div>
 	</section>
 
+	<!-- SKILLS -->
 	<img class="shape-divider" src="../src/dividers/tilt_wave.svg"/>
-	<section class="skills">
+
+	<section class="skills" id="skills">
 		<h2 class="h2 text-light">Skills</h2>
 		<div class="icon-grid">
 			{
@@ -106,40 +95,41 @@ const skills = [
             }
 		</div>
 	</section>
-		
-	<img class="shape-divider" src="../src/dividers/block_wave.svg"/>
+	
+	<!-- ABOUT -->
+	<img id="about" class="shape-divider" src="../src/dividers/block_wave.svg"/>
 	<section class="about">
 		<h2 class="h2">A bit about me</h2>
 		<div class="inner-section-wide">
 			<div class="inner-section">
+				<h3 class="h3">Core Qualifications</h3>
+				<ul>
+					<li>Experience in many aspects of game development, including designing, programming,
+						the art pipe-line, prototyping and debugging</li>
+					<li>Specialization in C# and knowledge of Java, JSON and XML</li>
+					<li>Great analytical and problem-solving skills</li>
+					<li>Ability to work as part of a team to meet a common goal</li>
+				</ul>
+			</div>
+			<div class="inner-section">
+				<img src="../src/images/psychicsnail.jpg" alt="">
+			</div>
+		</div>
+
+		<div class="inner-section-wide">
+			<div class="inner-section">
+				<img src="../src/images/psychicsnail.jpg" alt="">
+			</div>
+			<div class="inner-section">
 				<h3 class="h3">How it started</h3>
-				<p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, reiciendis?
-					Veritatis nisi deserunt labore quod possimus dicta architecto placeat exercitationem repudiandae
-					voluptatum ipsum doloremque provident hic accusamus, amet recusandae laboriosam!</p>
-			</div>
-			<div class="inner-section">
-				<img src="../src/images/psychicsnail.jpg" alt="">
+				<p class="p">quick recap of going from sketches to minecraft to unity and beond!</p>
 			</div>
 		</div>
 
 		<div class="inner-section-wide">
 			<div class="inner-section">
-				<img src="../src/images/psychicsnail.jpg" alt="">
-			</div>
-			<div class="inner-section">
-				<h3 class="h3">Thing</h3>
-				<p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, reiciendis?
-					Veritatis nisi deserunt labore quod possimus dicta architecto placeat exercitationem repudiandae
-					voluptatum ipsum doloremque provident hic accusamus, amet recusandae laboriosam!</p>
-			</div>
-		</div>
-
-		<div class="inner-section-wide">
-			<div class="inner-section">
-				<h3 class="h3">Thing</h3>
-				<p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, reiciendis?
-					Veritatis nisi deserunt labore quod possimus dicta architecto placeat exercitationem repudiandae
-					voluptatum ipsum doloremque provident hic accusamus, amet recusandae laboriosam!</p>
+				<h3 class="h3">How it's going</h3>
+				<p class="p">experiancs / current projects</p>
 			</div>
 			<div class="inner-section">
 				<img src="../src/images/psychicsnail.jpg" alt="">

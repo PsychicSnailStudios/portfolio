@@ -22,12 +22,19 @@
     );
 
     /* Spacing */
-    --padding-large: 3rem;
-    --padding-normal: 2rem;
-    --padding-small: 1rem;
+    --padding-tall: 1em 1.5em;
+    --padding-short: 0.3em 1.5em;
+    --padding-top: 1em 0;
 
-    --space-large: 3rem;
-    --space-normal: 1rem;
-    --space-small: 0.5rem;
+    --space-xl: 6em;
+    --space-l: 3em;
+    --space-m: 2em;
+    --space: 1em;
+    --space-s: 0.5em;
+    --space-xs: 0.2em;
 
+    /* Timeing */
+    --transition-time-short: 0.15s;
+    --transition-time: 0.4s;
+    --transition-time-long: 1s;
 }

@@ -7,7 +7,7 @@ body {
     justify-content: space-between;
     align-items: top;
 
-    padding-top: var(--space-large);
+    padding-top: var(--space-l);
 }
 
 .skills {
@@ -25,11 +25,11 @@ body {
     align-items: center;
     justify-content: center;
     padding: 6px;
-    transition: all 0.4s;
+    transition: all var(--transition-time);;
 }
 .bordered-img:hover {
     transform: translateY(-0.6em);
-    transition: all 0.4s;
+    transition: all var(--transition-time);;
 }
 .bordered-img img {
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);

@@ -1,0 +1,106 @@
+/* Utilities */
+
+.h1 {
+  font-size: 3.157rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 3.5rem;
+}
+
+.h2 {
+  font-size: 2.369rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.h3 {
+  font-size: 1.777rem;
+  font-weight: 500;
+}
+
+.h4 {
+  font-size: 1.333rem;
+}
+
+.p {
+  margin-top: 1em;
+  font-size: 1em;
+  max-width: 64ch;
+}
+.p-short {
+  max-width: 44ch;
+}
+
+.text-light {
+  color: hsl(var(--white));
+}
+
+.text-muted {
+  color: hsl(var(--muted-text));
+}
+
+.text-dark {
+  color: hsl(var(--bkg));
+}
+
+.text-gradient {
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lg-img {
+  max-width: 45ch;
+}
+
+.md-img {
+  max-width: 18ch;
+}
+
+.sm-img {
+  max-width: 8ch;
+}
+
+.allign-right {
+    display: flex;
+    justify-content: right;
+}
+
+.allign-left {
+    display: flex;
+    justify-content: left;
+}
+
+.allign-center {
+    display: flex;
+    justify-content: center;
+}
+
+.space {
+    width: 5em;
+}
+
+.push-up {
+    margin-top: -4em;
+}
+
+.push-up-large {
+    margin-top: -6em;
+}
+
+.inner-section {
+    max-width: 40%;
+}
+
+@media screen and (max-width: 999px) {
+
+  .inner-section {
+    max-width: 100%;
+  }
+
+  .inner-section-wide {
+    gap: var(--space-m);
+    flex-direction: column-reverse;
+  }
+}
