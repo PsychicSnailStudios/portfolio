@@ -1,7 +1,149 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import IconBox from '../components/IconBox.astro'
+
+import '../styles/home.css';
+
+const skills = [
+	{
+		icon: "unity",
+		title: "Unity",
+		subTitle: "PRO - 6 years",
+	},
+	{
+		icon: "cs",
+		title: "C#",
+		subTitle: "PRO - 6 years",
+	},
+	{
+		icon: "vscode",
+		title: "Visual Studio",
+		subTitle: "PRO - 6 years",
+	},
+	{
+		icon: "git",
+		title: "Git",
+		subTitle: "USER - 3 years",
+	},
+	{
+		icon: "html",
+		title: "HTML",
+		subTitle: "STUDENT - 1 year",
+	},
+	{
+		icon: "css",
+		title: "CSS",
+		subTitle: "STUDENT - 1 year",
+	},
+	{
+		icon: "java",
+		title: "Java / JS",
+		subTitle: "STUDENT - 1 year",
+	},
+	{
+		icon: "json",
+		title: "JSON",
+		subTitle: "PRO - 7 years",
+	},
+	{
+		icon: "aseprite",
+		title: "Aseprite",
+		subTitle: "USER - 3 years",
+	},
+	{
+		icon: "affinity",
+		title: "Affinity",
+		subTitle: "USER - 2 years",
+	},
+	{
+		icon: "figma",
+		title: "Figma",
+		subTitle: "STUDENT - 6 months",
+	},
+]
 ---
 
 <BaseLayout title="Portfolio - Home">
+	<section class="hero">
+		<div class="inner-section">
+			<h1 class="h1 text-dark">Hi There,<br>I'm <span class="text-gradient">Dawson</span></h1>
+			<h3 class="h3 text-muted">a passionte game dev</h3>
+			<p class="p text-muted">	Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Tempora impedit reiciendis alias maxime accusantium dicta suscipit veniam,
+									adipisci magni, aut voluptas nobis minus voluptatem natus.</p>
+		</div>
 
+		<div class="inner-section">
+			<div class="allign-right">
+			<div class="bordered-img lg-img">
+				<img src="../src/images/me.jpg" alt="">
+			</div>
+			</div>
+
+			<div class="allign-left push-up">
+			<div class="bordered-img md-img">
+				<img src="../src/images/psychicsnail.jpg" alt="">
+			</div>
+			</div>
+
+			<div class="allign-center push-up-large">
+			<div class="space"></div>
+			<div class="bordered-img sm-img">
+				<img src="../src/images/pixeljunky.jpg" alt="">
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<img class="shape-divider" src="../src/dividers/tilt_wave.svg"/>
+	<section class="skills">
+		<h2 class="h2 text-light">Skills</h2>
+		<div class="icon-grid">
+			{
+                skills.map(skill => (
+					<IconBox title={skill.title} subTitle={skill.subTitle} icon={skill.icon} />
+                ))
+            }
+		</div>
+	</section>
+		
+	<img class="shape-divider" src="../src/dividers/block_wave.svg"/>
+	<section class="about">
+		<h2 class="h2">A bit about me</h2>
+		<div class="inner-section-wide">
+			<div class="inner-section">
+				<h3 class="h3">How it started</h3>
+				<p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, reiciendis?
+					Veritatis nisi deserunt labore quod possimus dicta architecto placeat exercitationem repudiandae
+					voluptatum ipsum doloremque provident hic accusamus, amet recusandae laboriosam!</p>
+			</div>
+			<div class="inner-section">
+				<img src="../src/images/psychicsnail.jpg" alt="">
+			</div>
+		</div>
+
+		<div class="inner-section-wide">
+			<div class="inner-section">
+				<img src="../src/images/psychicsnail.jpg" alt="">
+			</div>
+			<div class="inner-section">
+				<h3 class="h3">Thing</h3>
+				<p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, reiciendis?
+					Veritatis nisi deserunt labore quod possimus dicta architecto placeat exercitationem repudiandae
+					voluptatum ipsum doloremque provident hic accusamus, amet recusandae laboriosam!</p>
+			</div>
+		</div>
+
+		<div class="inner-section-wide">
+			<div class="inner-section">
+				<h3 class="h3">Thing</h3>
+				<p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, reiciendis?
+					Veritatis nisi deserunt labore quod possimus dicta architecto placeat exercitationem repudiandae
+					voluptatum ipsum doloremque provident hic accusamus, amet recusandae laboriosam!</p>
+			</div>
+			<div class="inner-section">
+				<img src="../src/images/psychicsnail.jpg" alt="">
+			</div>
+		</div>
+	</section>
 </BaseLayout>

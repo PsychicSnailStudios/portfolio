@@ -6,11 +6,11 @@
 :root {
     /* Colors */
     --bkg: 259 8% 9%;
-    --gray: 241 3% 37%;
-    --white: 0 0% 100%;
+    --gray: 241 4% 35%;
+    --white: 0 0% 96%;
 
-    --text: 0 0% 100%;
-    --muted-text: 241 3% 37%;
+    --text: 0 0% 96%;
+    --muted-text: 241 4% 35%;
 
     --accent1: 346 56% 52%;
     --accent2: 22 100% 61%;
