@@ -1,0 +1,12 @@
+.h1 {
+    font-size: 7rem;
+    padding: var(--space-l);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 10;
+}
