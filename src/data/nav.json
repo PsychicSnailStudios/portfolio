@@ -1,17 +1,17 @@
 [
     {
         "name": "About",
-        "url": "/",
+        "url": "/portfolio/",
         "id": "#about-link"
     },
     {
         "name": "Portfolio",
-        "url": "/portfolio",
+        "url": "/portfolio/games",
         "id": "#portfolio-link"
     },
     {
         "name": "Contact",
-        "url": "/contact",
+        "url": "/portfolio/contact",
         "id": "#contact-link"
     }
 ]

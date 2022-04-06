@@ -1,0 +1,11 @@
+---
+import '../styles/components.css';
+
+const {img} = Astro.props;
+const {size} = Astro.props;
+const {alt} = Astro.props;
+---
+
+<div class="floating-img">
+	<img src={img} alt={alt}>
+</div>

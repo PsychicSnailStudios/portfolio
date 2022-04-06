@@ -6,7 +6,6 @@ section.contact {
 
 .box {
     color: hsl(var(--text));
-    width: 100%;
     display: flex;
     gap: var(--space-s);
     flex-direction: column;
@@ -21,21 +20,15 @@ section.contact {
 
 .title {
     padding-top: var(--space-l);
-    width: 100%;
     text-align: start;
 }
 .title img {
     margin-top: -2em;
 }
 
-.shape-divider {
-    width: 100%;
-}
-
 .section {
     padding: var(--space-l) var(--space);
     background: hsl(var(--bkg));
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;

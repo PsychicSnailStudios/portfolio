@@ -1,0 +1,17 @@
+---
+import { Icon } from 'astro-icon'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import GamesSection from '../components/GamesSection.astro'
+
+import '../styles/pages/games.css';
+---
+
+<BaseLayout title="Portfolio - Games">
+    <section class="splash">
+        <h1 class="h1 text-gradient fade">Game Jams</h1>
+        <a href="#games" class="text-muted down-btn fade"><Icon name="feather:chevron-down" width={48} /></a>
+    </section>
+
+    <img class="shape-divider" id="games" src="../src/dividers/tilt_wave.svg" alt=""/>
+	<GamesSection/>
+</BaseLayout>

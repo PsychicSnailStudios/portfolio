@@ -3,9 +3,11 @@ import '../styles/pages/home.css';
 
 import data from '../data/skills.json';
 
+import { Icon } from 'astro-icon'
 import BaseLayout from '../layouts/BaseLayout.astro'
 import IconBox from '../components/IconBox.astro'
 import ImageBox from '../components/ImageBox.astro'
+import FloatingImage from '../components/FloatingImage.astro'
 ---
 
 <BaseLayout title="Portfolio - Home" >
@@ -20,14 +22,17 @@ import ImageBox from '../components/ImageBox.astro'
 		</div>
 
 		<div class="inner-section scale">
-			<ImageBox allign="allign-right" img="../src/images/me.jpg" size="lg" alt="portrate of dawson" />
-			<ImageBox allign="allign-left" pos="push-up" img="../src/images/psychicsnail.jpg" size="md" alt="psychic snail studios logo" />
-			<ImageBox allign="allign-center" space="space" pos="push-up-large" img="../src/images/pixeljunky.jpg" size="sm" alt="dawson's instagram logo" />
+			<ImageBox allign="allign-right" img="/images/me.jpg" size="lg" alt="portrate of dawson" />
+			<ImageBox allign="allign-left" pos="push-up" img="/images/psychicsnail.jpg" size="md" alt="psychic snail studios logo" />
+			<ImageBox allign="allign-center" space="space" pos="push-up-large" img="/images/pixeljunky.jpg" size="sm" alt="dawson's instagram logo" />
 		</div>
 	</section>
 
 	<!-- SKILLS -->
-	<img class="shape-divider" id="skills" src="../src/dividers/tilt_wave.svg"/>
+	<img class="shape-divider" id="skills" src="../src/dividers/tilt_wave.svg" alt=""/>
+    <div class="next-section">
+		<a href="#skills" class="text-light push-up-s down-btn fade full-width"><Icon name="feather:chevron-down" width={48} /></a>
+	</div>
 
 	<section class="skills">
 		<h2 class="h2 text-light fade">Skills</h2>
@@ -41,27 +46,29 @@ import ImageBox from '../components/ImageBox.astro'
 	</section>
 	
 	<!-- ABOUT -->
-	<img id="about" class="shape-divider" src="../src/dividers/block_wave.svg"/>
+	<img id="about" class="shape-divider" src="../src/dividers/block_wave.svg" alt=""/>
 	<section class="about">
 		<h2 class="h2">A bit about me</h2>
 		<div class="inner-section-wide">
 			<div class="inner-section">
-				<h3 class="h3">About</h3>
-				<p>My name is Dawson Etheredge. I am 21 and I grew up in the mid-west USA.<br>
-				   I love to read, play drums/ukelelee, play Dungeons & Dragons, and make lattes</p>
+				<h3 class="h3">Bio</h3>
+				<p class="p">My name is Dawson Etheredge. I grew up in the midwest USA and have always
+				   had a passion for games and the stories they could tell.<br>
+				   &emsp;When I'm not working on a game or expanding my coding knowledge I love to
+				   read, create pixel art, play Dungeons & Dragons, practice the drums / ukelele and make latte art.</p>
 			</div>
 			<div class="inner-section">
-				<img src="../src/images/psychicsnail.jpg" alt="">
+				<FloatingImage img="/images/psychicsnail.jpg" alt="" />
 			</div>
 		</div>
 
 		<div class="inner-section-wide">
 			<div class="inner-section">
-				<!-- <ImageBox img="../src/images/unity_cert.jpg" /> -->
-				<img src="../src/images/unity_pro.png" alt="unity certified professional programmer badge">
+				<FloatingImage img="/images/unity_cert.jpg" alt="unity certified professional programmer badge" />
 			</div>
 			<div class="inner-section">
 				<h3 class="h3">Core Qualifications</h3>
+				<p class="p">Why would you want to hire me?</p>
 				<ul>
 					<li>Experience in many aspects of game development, including designing,
 						programming, the art pipe-line, prototyping, and debugging.</li>
@@ -71,28 +78,28 @@ import ImageBox from '../components/ImageBox.astro'
 					<li>Strong communication skills</li>
 					<li>Ability to work as part of a team to meet a common goal.</li>
 				</ul>
-				<a href="/files/Resume.pdf" target="_blank" rel="noopener noreferrer" class="">download my resume</a>
+				<p>Feel free to download my <a href="/files/Resume.pdf" target="_blank" rel="noopener noreferrer" class="">resume</a>.</p>
 			</div>
 		</div>
 
 		<div class="inner-section-wide">
 			<div class="inner-section">
 				<h3 class="h3">My Coding Journy</h3>
-				<p class="p">Even from a yong age the idea of making my own games fasinated me.
-							 I always had ideas for things<br>
-							 When I got my fist laptop I tried useing game maker studio to make
-							 a few small games but it wasn't until I developed an interest in
-							 creating mods for Minecraft that I finaly decided to learn to code.
-							 <br>I started out just making simple command line applications to
-							 write and compile files for me but After finding some tutorials
+				<p class="p">Even from a yong age the idea of making my own games fasinated me
+							 and I always had ideas for things I wanted to make. I tried to use
+							 GameMaker Studio to make a few small games but it wasn't until I
+							 developed an interest in creating mods for Minecraft that I finaly
+							 decided to learn how to code.<br>
+							 &emsp;I started out just making simple command line applications to
+							 write and compile files for me, but After finding some tutorials
 							 online that recommended Unity and trying it out I was hooked.<br>
-							 I started watching a following all the decent totorials I could
+							 &emsp;I started watching a following all the decent totorials I could
 							 find and though most projects didn't get completed I eventuly
 							 began to join game jams.<br>
-							 Now some stuff</p>
+							 &emsp;Now some stuff</p>
 			</div>
 			<div class="inner-section">
-				<img src="../src/images/psychicsnail.jpg" alt="">
+				<FloatingImage img="/images/psychicsnail.jpg" alt="" />
 			</div>
 		</div>
 	</section>

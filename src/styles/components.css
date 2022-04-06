@@ -91,3 +91,11 @@ footer {
 .side-nav-btn:hover {
   transform: scale(1.2);
 }
+
+/* IMAGE */
+.floating-img {
+  transition: all var(--transition-time);
+}
+.floating-img:hover {
+  transform: translateY(-0.4em);
+}

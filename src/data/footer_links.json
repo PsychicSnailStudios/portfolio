@@ -18,5 +18,10 @@
         "name": "Instagram",
         "url": "https://www.instagram.com/the.pixel.junky",
         "icon": "instagram"
+    },
+    {
+        "name": "Twitter",
+        "url": "https://twitter.com/ThePsychicSnail",
+        "icon": "twitter"
     }
 ]

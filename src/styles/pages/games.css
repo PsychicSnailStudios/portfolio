@@ -1,0 +1,62 @@
+.splash {
+    padding-top: var(--space-xl);
+}
+
+.game {
+    display: flex;
+    text-align: start;
+}
+
+.game-drk {
+    background-color: hsl(var(--bkg));
+    color: hsl(var(--text));
+}
+.game-lgt {
+    background-color: hsl(var(--white));
+    color: hsl(var(--bkg));
+}
+
+h4 {
+    padding-top: var(--space-s);
+}
+
+main {
+    margin-bottom: 0;
+}
+
+.gif {
+    max-width: 55%;
+}
+
+.alt-button {
+    color: inherit;
+    border: 2px solid;
+    text-decoration: none;
+    padding: var(--padding-short);
+}
+
+.alt-button:hover {
+    border: 4px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: var(--gradient);
+    
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.links-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: var(--space);
+}
+
+@media screen and (max-width: 999px) {
+
+    .gif {
+        max-width: 100%;
+    }
+}

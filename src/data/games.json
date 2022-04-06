@@ -1,0 +1,66 @@
+[
+    {
+        "name": "CUBES",
+        "description": "A simple arcade game about protecting plants from the incoming cubes.",
+        "points": [
+            "Mouse interactions",
+            "UI and menu polish",
+            "Tweening"
+        ],
+        "summery": "All code and assets made by me in 4 days for the Brackeys Game Jam 2021.1",
+        "links": [
+            {
+                "name": "play",
+                "link": "https://psychic-snail-studios.itch.io/cubes"
+            },
+            {
+                "name": "source code",
+                "link": "https://github.com/PsychicSnailStudios/cubes-source"
+            }
+        ],
+        "gif": "cubes.gif",
+        "style": "drk",
+        "bottom": "block_wave_2"
+    },
+    {
+        "name": "Re-Slimed",
+        "description": "A tower-defense game where you play as a robot trying to defend his clock tower from a slime invasion!",
+        "points": [
+            "Pathfinding",
+            "2D tilemaps",
+            "Gamepad support"
+        ],
+        "summery": "All code and assets made by me in 5 days for Brackeys Game Jam 2020.2",
+        "links": [
+            {
+                "name": "play",
+                "link": "https://psychic-snail-studios.itch.io/reslimed-brackeys-game-jam2020"
+            }
+        ],
+        "gif": "slimed.gif",
+        "style": "lgt"
+    },
+    {
+        "name": "Time doesn't care",
+        "description": "A small game where you have to protect your health container from enemies and your own bullets!",
+        "points": [
+            "Time manipulation",
+            "2D movement",
+            "Enemy AI"
+        ],
+        "summery": "All code and art made by me in 24 hours for the Extra Credits Jam #6. Music by Eric Matyas, SFX by 99Sounds",
+        "links": [
+            {
+                "name": "play",
+                "link": "https://psychic-snail-studios.itch.io/time-doesnt-care-extracreditsjam6"
+            },
+            {
+                "name": "source code",
+                "link": "https://github.com/PsychicSnailStudios/tdc-source"
+            }
+        ],
+        "gif": "tdc.gif",
+        "style": "drk",
+        "top": "triangle_wave"
+    }
+]

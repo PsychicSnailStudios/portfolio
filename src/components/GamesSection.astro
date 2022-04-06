@@ -1,0 +1,42 @@
+---
+import '../styles/components.css';
+
+import FloatingImage from '../components/FloatingImage.astro'
+
+import data from '../data/games.json'
+---
+<div>
+{
+	data.map(game => (
+		<img class="shape-divider" src="../src/dividers/${game.top}.svg" alt=""/>
+		<section class="game game-${game.style}">
+        <h3 class="h2 full-width fade">{game.name}</h3>
+        <div class="inner-section-wide fade">
+            <div class="inner-section">
+                <p>{game.description}</p>
+                <h4>Key Implementations:</h4>
+                <ul>
+                    {
+						game.points.map(point => (
+							<li>{point}</li>
+						))
+					}
+                </ul>
+                <p>{game.summery}</p>
+				<div class="links-section">
+				{
+					game.links.map(btn => (
+						<a href={btn.link} class="alt-button">{btn.name}</a>
+					))
+				}
+				</div>
+            </div>
+            <div class="gif">
+				<img src="/images/games/${game.gif}" alt="" />
+			</div>
+        </div>
+    </section>
+	<img class="shape-divider" src="../src/dividers/${game.bottom}.svg" alt=""/>
+	))
+}
+</div>

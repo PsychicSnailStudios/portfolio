@@ -84,9 +84,16 @@
 .push-up {
     margin-top: -4em;
 }
+.push-up-s {
+  margin-top: -1.5em;
+}
 
 .push-up-large {
     margin-top: -6em;
+}
+
+.full-width {
+  width: 100%;
 }
 
 /* ANIMATIONS */

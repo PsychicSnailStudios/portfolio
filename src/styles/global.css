@@ -67,14 +67,6 @@ section {
   gap: var(--space-m);
 }
 
-.inner-section img {
-  max-width: 45ch;
-  transition: all var(--transition-time);
-}
-.inner-section img:hover {
-  transform: translateY(-0.4em);
-}
-
 .wrapper {
   overflow: hidden;
   display: grid;
@@ -103,6 +95,14 @@ small {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.down-btn {
+  transition: all var(--transition-time);
+}
+
+.down-btn:hover {
+  transform: translateY(0.4em);
 }
 
 .round-btn {
