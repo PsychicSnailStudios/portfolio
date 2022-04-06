@@ -1,0 +1,23 @@
+---
+import '../styles/components.css';
+
+import data from '../data/footer_links.json';
+
+import { Icon } from 'astro-icon'
+
+const {iconWidth=25} = Astro.props;
+---
+
+<div class="social-links-container">
+    <ul class="social-links">
+    {
+        data.map(link => (
+        <li>
+            <a href={link.url}>
+                <Icon name={link.icon} width={iconWidth} class="social-icon"/>
+            </a>
+        </li>
+        ))
+    }
+    </ul>
+</div>

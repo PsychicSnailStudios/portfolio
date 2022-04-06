@@ -14,6 +14,7 @@
 
     --accent1: 346 56% 52%;
     --accent2: 22 100% 61%;
+    --accent3: 8 74% 60%;
 
     --gradient: linear-gradient(
         -30deg,
@@ -28,7 +29,7 @@
 
     --space-xl: 6em;
     --space-l: 3em;
-    --space-m: 2em;
+    --space-m: 2.3em;
     --space: 1em;
     --space-s: 0.5em;
     --space-xs: 0.2em;

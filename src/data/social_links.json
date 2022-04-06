@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Itch.io",
+        "url": "https://psychic-snail-studios.itch.io/",
+        "icon": "itchio_white"
+    },
+    {
+        "name": "Github",
+        "url": "https://github.com/PsychicSnailStudios",
+        "icon": "github_white"
+    },
+    {
+        "name": "Linked In",
+        "url": "https://www.linkedin.com/in/d-etheredge",
+        "icon": "linkedin_white"
+    },
+    {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/the.pixel.junky",
+        "icon": "instagram_white"
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "icon": "unity",
+        "title": "Unity",
+        "subTitle": "PRO - 6 years"
+    },
+    {
+        "icon": "cs",
+        "title": "C#",
+        "subTitle": "PRO - 6 years"
+    },
+    {
+        "icon": "vscode",
+        "title": "Visual Studio",
+        "subTitle": "PRO - 6 years"
+    },
+    {
+        "icon": "git",
+        "title": "Git",
+        "subTitle": "USER - 3 years"
+    },
+    {
+        "icon": "html",
+        "title": "HTML",
+        "subTitle": "STUDENT - 1 year"
+    },
+    {
+        "icon": "css",
+        "title": "CSS",
+        "subTitle": "STUDENT - 1 year"
+    },
+    {
+        "icon": "java",
+        "title": "Java / JS",
+        "subTitle": "STUDENT - 1 year"
+    },
+    {
+        "icon": "json",
+        "title": "JSON",
+        "subTitle": "PRO - 7 years"
+    },
+    {
+        "icon": "aseprite",
+        "title": "Aseprite",
+        "subTitle": "USER - 3 years"
+    },
+    {
+        "icon": "affinity",
+        "title": "Affinity",
+        "subTitle": "USER - 2 years"
+    },
+    {
+        "icon": "figma",
+        "title": "Figma",
+        "subTitle": "STUDENT - 6 months"
+    }
+]

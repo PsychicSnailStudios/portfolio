@@ -11,6 +11,17 @@
   -webkit-text-fill-color: hsl(var(--white));
 }
 
+:link {
+  color: hsl(var(--accent3));
+}
+:visited {
+  color: hsl(var(--accent1));
+}
+:link:hover,
+:visited:hover {
+  color: hsl(var(--accent2));
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 12px;
@@ -68,7 +79,6 @@ small {
 }
 
 /* Components */
-
 .button {
   color: hsl(var(--white));
   border: 3px solid transparent;
@@ -76,10 +86,34 @@ small {
   padding: var(--padding-tall);
 }
 .button:hover {
+  text-decoration: underline;
+  color: hsl(var(--white));
+}
+
+.button.active {
   background: var(--gradient);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.round-btn {
+  display: none;
+  position: fixed;
+  bottom: var(--space);
+  right: var(--space);
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: hsl(var(--gray));
+  color: hsl(var(--white));
+  cursor: pointer;
+  padding: var(--space-s);
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+.round-btn:hover {
+  background-color: hsl(var(--gray) / 0.9);
 }
 
 .icon-grid {
@@ -90,29 +124,29 @@ small {
   gap: var(--space-m);
 }
 
-.icon-box {
-  background-color: hsl(var(--gray));
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  gap: var(--space-xs);
-  padding: var(--space-l);
-
-  width: 300px;
-  height: 300px;
-  transition: all var(--transition-time);;
+.inner-section {
+  max-width: 40%;
+  transition: all var(--transition-time);
 }
-.icon-box:hover {
-    transform: translateY(-0.4em);
-    transition: all var(--transition-time);;
+
+.inner-section-wide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: all var(--transition-time);
 }
 
 @media screen and (max-width: 999px) {
-  
+
+  .inner-section {
+    max-width: 100%;
+  }
+
+  .inner-section-wide {
+    gap: var(--space-m);
+    flex-direction: column-reverse;
+  }
+
   .button:hover {
     border: 6px solid;
     border-image-slice: 1;

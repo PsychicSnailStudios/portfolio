@@ -1,0 +1,17 @@
+[
+    {
+        "name": "About",
+        "url": "/",
+        "id": "#about-link"
+    },
+    {
+        "name": "Portfolio",
+        "url": "/portfolio",
+        "id": "#portfolio-link"
+    },
+    {
+        "name": "Contact",
+        "url": "/contact",
+        "id": "#contact-link"
+    }
+]

@@ -1,13 +1,16 @@
 ---
+import '../styles/components.css';
+
 import { Icon } from 'astro-icon'
 
 const {title="unity"} = Astro.props;
 const {subTitle="PRO - 6 years"} = Astro.props;
 const {icon="unity"} = Astro.props;
+const {borderStyle="text-gradient"} = Astro.props;
 ---
 
 <div class="icon-box">
     <Icon name={icon} width={64} />
     <h3 class="h3 text-light">{title}</h3>
-    <p class="text-gradient">{subTitle}</p>
+    <p class={borderStyle}>{subTitle}</p>
 </div>

@@ -1,47 +1,12 @@
 ---
-import '../styles/footer.css';
+import '../styles/components.css';
 
-import { Icon } from 'astro-icon'
-
-const socialLinks = [
-    {
-        name: 'Itch.io',
-        url: 'https://psychic-snail-studios.itch.io/',
-        icon: 'itchio',
-    },{
-        name: 'Github',
-        url: 'https://github.com/PsychicSnailStudios',
-        icon: 'github',
-    },
-    {
-        name: 'Linked In',
-        url: 'https://www.linkedin.com/in/d-etheredge',
-        icon: 'linkedin',
-    },
-    {
-        name: 'Instagram',
-        url: 'https://www.instagram.com/the.pixel.junky',
-        icon: 'instagram',
-    }
-]
+import SocialLinks from '../components/SocialLinks.astro'
 ---
 
 <footer>
-    <ul class="social-links">
-    {
-        socialLinks.map(link => (
-        <li>
-            <a href={link.url}>
-                <Icon name={link.icon} width={25} class="social-icon"/>
-            </a>
-        </li>
-        ))
-    }
-    </ul>
-
+    <SocialLinks iconWidth={25} />
     <small>copyright © <span id="copyrightYear"></span> Dawson Etheredge</small>
 </footer>
 
-<script>
-	document.querySelector('#copyrightYear').textContent = new Date().getFullYear();
-</script>
+<script src="../src/js/footer.js" />

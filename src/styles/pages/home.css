@@ -1,0 +1,30 @@
+.hero {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding-top: var(--space-l);
+}
+
+.skills {
+    background: hsl(var(--bkg));
+    padding-top: var(--space-xl);
+}
+
+.about {
+    gap: 6rem;
+}
+
+@media screen and (max-width: 999px) {
+  
+    .hero {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about .inner-section-wide {
+        flex-direction: column;
+    }
+}

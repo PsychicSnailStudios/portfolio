@@ -1,25 +1,9 @@
 ---
-import '../styles/nav.css';
+import '../styles/components/nav.css';
+
+import data from '../data/nav.json';
 
 import { Icon } from 'astro-icon'
-
-const navLinks = [
-    {
-        name: 'About',
-        url: '/',
-        id: "#about-link"
-    },
-    {
-        name: 'Portfolio',
-        url: '/portfolio',
-        id: "#portfolio-link"
-    },
-    {
-        name: 'Contact',
-        url: '/contact',
-        id: "#contact-link"
-    }
-]
 ---
 
 <nav>
@@ -29,13 +13,13 @@ const navLinks = [
         </a>
         <div class="nav-wrapper">
             <button class="menu-button" id="menu-btn" aria-expanded="false" aria-label="Open mobile nav">
-                <Icon name="feather:menu" width={25} />
+                <Icon name="feather:menu" width={48} />
             </button>
             <ul class="nav-links" role="navigation">
                 {
-                    navLinks.map(link => (
+                    data.map(link => (
                         <li role="none">
-                            <a href={link.url} id={link.id} class="button">{link.name}</a>
+                            <a href={link.url} id={link.id} class="button nav-button">{link.name}</a>
                         </li>
                     ))
                 }
@@ -44,13 +28,4 @@ const navLinks = [
     </div>
 </nav>
 
-<script>
-  const navBtn = document.querySelector('#menu-btn');
-//   const about = document.querySelector('#about-link');
-  navBtn.addEventListener('click', () => {
-    navBtn.setAttribute('aria-expanded', navBtn.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');
-  })
-  /* about.addEventListener('click', () => {
-    document.querySelector('#about').scrollIntoView();
-  }) */
-</script>
+<script src="../src/js/nav.js" />

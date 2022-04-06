@@ -1,4 +1,6 @@
 ---
+import '../styles/components.css';
+
 const {title} = Astro.props;
 const {img} = Astro.props;
 const {size} = Astro.props;
@@ -8,7 +10,7 @@ const {alt} = Astro.props;
 const {space} = Astro.props;
 ---
 
-<div class="${allign} ${pos}">
+<div class="${allign} ${pos} scale-in">
     <div class={space}></div>
 	<div class="bordered-img ${size}-img">
 		<img src={img} alt={alt}>
