@@ -67,6 +67,14 @@ section {
   gap: var(--space-m);
 }
 
+.inner-section img {
+  max-width: 45ch;
+  transition: all var(--transition-time);
+}
+.inner-section img:hover {
+  transform: translateY(-0.4em);
+}
+
 .wrapper {
   overflow: hidden;
   display: grid;
