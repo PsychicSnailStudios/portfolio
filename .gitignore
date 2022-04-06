@@ -1,8 +1,8 @@
 # build output
 dist
 
-# dependencies
-node_modules/
+# dependencies? I think i need those :P
+# node_modules/
 
 # logs
 npm-debug.log*
