@@ -29,4 +29,4 @@ import { Icon } from 'astro-icon'
 </nav>
 
 <!-- <script src="../js/nav.js" /> -->
-<script src={Astro.resolve('../js/nav.js')} hoist type="module"></script>
+<script type="module" src={(await import("../js/nav.js?url")).default}></script>

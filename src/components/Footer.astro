@@ -10,4 +10,4 @@ import SocialLinks from '../components/SocialLinks.astro'
 </footer>
 
 <!-- <script src="../js/footer.js" /> -->
-<script src={Astro.resolve('../js/footer.js')} hoist type="module"></script>
+<script type="module" src={(await import("../js/footer.js?url")).default}></script>
