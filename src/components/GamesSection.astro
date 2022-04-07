@@ -8,7 +8,7 @@ import data from '../data/games.json'
 <div>
 {
 	data.map(game => (
-		<img class="shape-divider" src="../src/dividers/${game.top}.svg" alt=""/>
+		<img class="shape-divider" src="/images/dividers/${game.top}.svg" alt=""/>
 		<section class="game game-${game.style}">
         <h3 class="h2 full-width fade">{game.name}</h3>
         <div class="inner-section-wide fade">
@@ -36,7 +36,7 @@ import data from '../data/games.json'
 			</div>
         </div>
     </section>
-	<img class="shape-divider" src="../src/dividers/${game.bottom}.svg" alt=""/>
+	<img class="shape-divider" src="/images/dividers/${game.bottom}.svg" alt=""/>
 	))
 }
 </div>

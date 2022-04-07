@@ -28,4 +28,5 @@ import { Icon } from 'astro-icon'
     </div>
 </nav>
 
-<script src="../js/nav.js" />
+<!-- <script src="../js/nav.js" /> -->
+<script src={Astro.resolve('../js/nav.js')} hoist type="module"></script>

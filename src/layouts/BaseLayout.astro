@@ -36,6 +36,7 @@ const {title="Portfolio"} = Astro.props;
 		</div>
 	</body>
 
-	<script src="../js/toTopButton.js" />
+	<!-- <script src="../js/toTopButton.js" /> -->
+	<script src={Astro.resolve('../js/toTopButton.js')} hoist type="module"></script>
 
 </html>
