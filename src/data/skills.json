@@ -2,22 +2,22 @@
     {
         "icon": "unity",
         "title": "Unity",
-        "subTitle": "PRO - 6 years"
+        "subTitle": "CERTIFIED - 4 years"
     },
     {
         "icon": "cs",
         "title": "C#",
-        "subTitle": "PRO - 6 years"
+        "subTitle": "PRO - 5 years"
     },
     {
         "icon": "vscode",
         "title": "Visual Studio",
-        "subTitle": "PRO - 6 years"
+        "subTitle": "PRO - 4 years"
     },
     {
         "icon": "git",
         "title": "Git",
-        "subTitle": "USER - 3 years"
+        "subTitle": "SKILLED - 2 years"
     },
     {
         "icon": "html",
@@ -37,17 +37,17 @@
     {
         "icon": "json",
         "title": "JSON",
-        "subTitle": "PRO - 7 years"
+        "subTitle": "PRO - 6 years"
     },
     {
         "icon": "aseprite",
         "title": "Aseprite",
-        "subTitle": "USER - 3 years"
+        "subTitle": "SKILLED - 2 years"
     },
     {
         "icon": "affinity",
         "title": "Affinity",
-        "subTitle": "USER - 2 years"
+        "subTitle": "SKILLED - 2 years"
     },
     {
         "icon": "figma",
