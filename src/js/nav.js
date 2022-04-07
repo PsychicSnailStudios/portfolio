@@ -9,6 +9,8 @@ setNavigation();
 
 function setNavigation() {
     var path = window.location.pathname;
+
+    console.log(path);
     
     navBtns.forEach(nb => {
         var href = nb.getAttribute('href');
@@ -16,5 +18,6 @@ function setNavigation() {
         if (path === href) {
             nb.classList.add('active');
         }
+        console.log(href);
     });
 }
