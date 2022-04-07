@@ -6,12 +6,12 @@
     },
     {
         "name": "Portfolio",
-        "url": "/games",
+        "url": "/games/",
         "id": "#portfolio-link"
     },
     {
         "name": "Contact",
-        "url": "/contact",
+        "url": "/contact/",
         "id": "#contact-link"
     }
 ]
