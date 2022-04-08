@@ -116,8 +116,9 @@ small {
   background-color: hsl(var(--gray));
   color: hsl(var(--white));
   cursor: pointer;
-  padding: var(--space-s);
-  border-radius: 50%;
+  padding: var(--space);
+  /* border-radius: 50%; */
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   aspect-ratio: 1/1;
 }
 .round-btn:hover {
