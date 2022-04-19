@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Geomatrix";
-  src: url("../fonts/geomatrix/Geomatrix.otf") format("opentype");
+  src: url("../fonts/geomatrix/Geomatrix.woff") format("woff");
 }
 
 :root {
