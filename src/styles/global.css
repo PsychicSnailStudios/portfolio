@@ -37,7 +37,7 @@
 }
 
 body {
-  font-family: 'Geomatrix', 'sans-serif';
+  font-family: 'Geomatrix', 'Monospace';
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -90,7 +90,7 @@ small {
   color: hsl(var(--white));
 }
 
-.button.active {
+.button[aria-current="page"] {
   background: var(--gradient);
   background-clip: text;
   -webkit-background-clip: text;
