@@ -44,4 +44,8 @@ section.contact {
         flex-direction: column;
         gap: var(--space-l);
     }
+
+    .h1 {
+        padding-bottom: var(--space-s);
+    }
 }
