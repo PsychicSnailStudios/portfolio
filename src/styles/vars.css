@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Geomatrix";
-  src: url("../fonts/geomatrix/Geomatrix.woff") format("woff");
+  src: local("../fonts/geomatrix/Geomatrix.woff") format("woff");
 }
 
 :root {
