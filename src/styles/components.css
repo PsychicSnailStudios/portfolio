@@ -6,6 +6,7 @@ footer {
   align-items: center;
   justify-content: center;
   padding: var(--padding-top);
+  gap: 0.5em;
 }
 
 /* SOCIAL ICON LIST */

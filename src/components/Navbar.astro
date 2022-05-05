@@ -19,7 +19,9 @@ import { Icon } from 'astro-icon'
                 {
                     data.map(link => (
                         <li role="none">
-                            <a role="menuitem" href={link.url} id={link.id} class="button nav-button">{link.name}</a>
+                            <div class="button">
+                            <a role="menuitem" href={link.url} id={link.id} class="button nav-button nav-button-link">{link.name}</a>
+                            </div>
                         </li>
                     ))
                 }

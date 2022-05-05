@@ -1,6 +1,6 @@
 .h1 {
     font-size: 7rem;
-    padding: var(--space-m);
+    padding: var(--space-s);
 }
 
 .container {

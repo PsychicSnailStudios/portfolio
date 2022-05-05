@@ -13,13 +13,33 @@
 
 :link {
   color: hsl(var(--accent3));
+  text-decoration: none;
+  position: relative;
 }
+.link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all var(--transition-time);
+}
+
 :visited {
   color: hsl(var(--accent1));
 }
+
 :link:hover,
 :visited:hover {
   color: hsl(var(--accent2));
+}
+.link:hover::after {
+  transform: scaleX(1);
 }
 
 /* Scrollbar */
@@ -86,11 +106,12 @@ small {
   padding: var(--padding-tall);
 }
 .button:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   color: hsl(var(--white));
 }
 
 .button[aria-current="page"] {
+  color: hsl(var(--accent3));
   background: var(--gradient);
   background-clip: text;
   -webkit-background-clip: text;
