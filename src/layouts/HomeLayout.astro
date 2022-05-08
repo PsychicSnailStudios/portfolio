@@ -10,6 +10,12 @@ import Navbar from '../components/Navbar.astro'
 import Footer from '../components/Footer.astro'
 
 const {title="Portfolio"} = Astro.props;
+
+import CMS from 'netlify-cms-app'
+// Initialize the CMS object
+CMS.init();
+// Now the registry is available via the CMS object.
+// CMS.registerPreviewTemplate('my-template', game)
 ---
 
 <html lang="en">
@@ -37,16 +43,16 @@ const {title="Portfolio"} = Astro.props;
 		</div>
 
 		<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
+			if (window.netlifyIdentity) {
+				window.netlifyIdentity.on("init", user => {
+				if (!user) {
+					window.netlifyIdentity.on("login", () => {
+					document.location.href = "/admin/";
+					});
+				}
+				});
+			}
+		</script>
 
 	</body>
 
