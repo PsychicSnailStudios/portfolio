@@ -57,7 +57,7 @@
 }
 
 body {
-  font-family: 'Geomatrix', 'Monospace';
+  font-family: 'Geomatrix', 'Geomatrix-2', Monospace;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -103,14 +103,20 @@ small {
   color: hsl(var(--white));
   border: 3px solid transparent;
   text-decoration: none;
-  padding: var(--padding-tall);
+  padding: var(--padding-button);
 }
 .button:hover {
   /* text-decoration: underline; */
   color: hsl(var(--white));
 }
 
-.button[aria-current="page"] {
+.button a {
+  color: hsl(var(--white));
+}
+.button a[aria-current="false"] {
+  color: hsl(var(--white));
+}
+.button a[aria-current="page"] {
   color: hsl(var(--accent3));
   background: var(--gradient);
   background-clip: text;

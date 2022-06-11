@@ -3,6 +3,11 @@
   src: local("../fonts/geomatrix/Geomatrix.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Geomatrix-2";
+  src: url("../fonts/geomatrix/Geomatrix.woff") format("woff");
+}
+
 :root {
     /* Colors */
     --bkg: 259 8% 9%;
@@ -23,6 +28,7 @@
     );
 
     /* Spacing */
+    --padding-button: 0.2em 1.5em;
     --padding-tall: 1em 1.5em;
     --padding-short: 0.3em 1.5em;
     --padding-top: 1.5em 0;
